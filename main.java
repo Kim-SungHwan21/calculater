@@ -17,13 +17,15 @@ public class SoneDamageCalculate {
     static boolean flag;
 
 
+
+
     /**
      * Some javadoc.
      */
 
     public  void attack(DataOutputStream dataOutputStream) {
 
-
+        System.out.println("입력 예시를 추가");
         Thread soldierAttack = new Thread(new SoldierAttack(dataOutputStream));
         Thread monsterAttack = new Thread(new MonsterAttack(dataOutputStream));
         soldierAttack.start();
