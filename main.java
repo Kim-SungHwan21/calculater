@@ -23,7 +23,7 @@ public class SoneDamageCalculate {
 
     public  void attack(DataOutputStream dataOutputStream) {
 
-
+        System.out.println("충돌 예시 입력");
         Thread soldierAttack = new Thread(new SoldierAttack(dataOutputStream));
         Thread monsterAttack = new Thread(new MonsterAttack(dataOutputStream));
         soldierAttack.start();
